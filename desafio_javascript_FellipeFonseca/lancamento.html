@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford - Lançamento</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lancamento.css">
+    <script src="js/compare.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="area-logo">
+            <img src="img/logo-ford-256.png" class="logo" alt="Ford">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lancamento.html">Lançamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video-area">
+            <iframe src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&loop=1&mute=1&rel=0" title="Vídeo Ford Ranger" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <ul class="modelcars">
+            <li>
+                <img src="img/XL Cabine.jpg" class="photocar" alt="Ranger XL">
+                <div class="infocar">
+                    <input type="checkbox" class="checkbox" onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'))">
+                    <div class="info">
+                        <span class="textmodel">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
+                        <span class="textprice">Preço Sugerido: R$ 183.850</span>
+                    </div>
+                    <img src="img/info.png" class="infoicon" alt="Info">
+                </div>
+            </li>
+
+            <li>
+                <img src="img/xls 2.2 diesel.jpg" class="photocar" alt="Ranger XLS">
+                <div class="infocar">
+                    <input type="checkbox" class="checkbox" onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'))">
+                    <div class="info">
+                        <span class="textmodel">XLS 2.2 Diesel 4X4 AT 2022</span>
+                        <span class="textprice">Preço Sugerido: R$ 220.690</span>
+                    </div>
+                    <img src="img/info.png" class="infoicon" alt="Info">
+                </div>
+            </li>
+
+            <li>
+                <img src="img/storm.jpg" class="photocar" alt="Ranger Storm">
+                <div class="infocar">
+                    <input type="checkbox" class="checkbox" onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'img/storm.jpg'))">
+                    <div class="info">
+                        <span class="textmodel">Storm 3.2 Diesel 4X4 AT 2022</span>
+                        <span class="textprice">Preço Sugerido: R$ 222.790</span>
+                    </div>
+                    <img src="img/info.png" class="infoicon" alt="Info">
+                </div>
+            </li>
+        </ul>
+
+        <div class="compare-button-area">
+            <button type="button" onclick="ShowCompare()">Comparar Carros</button>
+        </div>
+    </main>
+
+    <footer>
+        <nav id="social">
+            <ul>
+                <li><span class="redesociais">Redes Sociais</span></li>
+                <li><a href="#"><img src="img/facebook-50.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/youtube-squared-50.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="img/instagram-logo-50.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+        <img src="img/ford-96.png" class="ford-footer" alt="Ford">
+    </footer>
+
+    <div id="compare">
+        <div class="compare-box">
+            <table>
+                <tbody>
+                    <tr><td></td><td id="compare_image_0"></td><td id="compare_image_1"></td></tr>
+                    <tr><td>Modelo</td><td id="compare_modelo_0"></td><td id="compare_modelo_1"></td></tr>
+                    <tr><td>Altura da caçamba (mm)</td><td id="compare_alturacacamba_0"></td><td id="compare_alturacacamba_1"></td></tr>
+                    <tr><td>Altura do veículo (mm)</td><td id="compare_alturaveiculo_0"></td><td id="compare_alturaveiculo_1"></td></tr>
+                    <tr><td>Altura livre do solo (mm)</td><td id="compare_alturasolo_0"></td><td id="compare_alturasolo_1"></td></tr>
+                    <tr><td>Capacidade de carga (Kg)</td><td id="compare_capacidadecarga_0"></td><td id="compare_capacidadecarga_1"></td></tr>
+                    <tr><td>Motor</td><td id="compare_motor_0"></td><td id="compare_motor_1"></td></tr>
+                    <tr><td>Potência (cv)</td><td id="compare_potencia_0"></td><td id="compare_potencia_1"></td></tr>
+                    <tr><td>Volume de caçamba (L)</td><td id="compare_volumecacamba_0"></td><td id="compare_volumecacamba_1"></td></tr>
+                    <tr><td>Roda</td><td id="compare_roda_0"></td><td id="compare_roda_1"></td></tr>
+                    <tr><td>Preço</td><td id="compare_preco_0"></td><td id="compare_preco_1"></td></tr>
+                </tbody>
+            </table>
+            <button type="button" onclick="HideCompare()">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>

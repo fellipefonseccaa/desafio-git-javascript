@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford - Contato</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="area-logo">
+            <img src="img/logo-ford-256.png" class="logo" alt="Ford">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lancamento.html">Lançamento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <div class="forms">
+            <div class="contact-car">
+                <img src="img/xls 2.2 diesel.jpg" alt="Ford Ranger">
+            </div>
+
+            <div class="form-area">
+                <h2>Sobre Você</h2>
+                <form id="contact-form">
+                    <input id="nome" type="text" placeholder="NOME*" class="fordform" required>
+                    <input id="email" type="email" placeholder="E-MAIL*" class="fordform" required>
+                    <input id="cpf" type="text" placeholder="CPF*" class="fordform" required>
+                    <input id="sobrenome" type="text" placeholder="SOBRENOME*" class="fordform" required>
+                    <input id="telefone" type="text" placeholder="TELEFONE*" class="fordform" required>
+                    <select id="tipo-contato" class="fordform" required>
+                        <option value="">COMO DESEJA SER CONTATADO</option>
+                        <option value="telefone">TELEFONE</option>
+                        <option value="email">E-MAIL</option>
+                    </select>
+                    <button id="send-button" type="submit">Enviar</button>
+                    <p id="form-message"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav id="social">
+            <ul>
+                <li><span class="redesociais">Redes Sociais</span></li>
+                <li><a href="#"><img src="img/facebook-50.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/youtube-squared-50.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="img/instagram-logo-50.png" alt="Instagram"></a></li>
+            </ul>
+        </nav>
+        <img src="img/ford-96.png" class="ford-footer" alt="Ford">
+    </footer>
+</body>
+</html>
